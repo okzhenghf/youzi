@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" id="boxHTML">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Title</title>
+    <style>
+        body,html{
+            font-size: 20px;
+            max-width: 640px;
+            margin: auto;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .head{
+            width: 100%;
+            display: flex;
+        }
+        img{
+            height: 3rem;
+           flex:auto;
+        }
+        img:nth-child(2){
+            margin-left: 4rem;
+            height:3rem;
+            flex: auto;
+        }
+    </style>
+</head>
+<body>
+<div class="head">
+    <img src="images/img_01.jpg" alt="">
+    <img src="images/img_04.jpg" alt="">
+</div>
+</body>
+</html>
+<script>
+    (function () {
+        var boxHTML=document.getElementById("boxHTML");
+        var screenX=document.body.clientWidth/16;
+
+        if(document.body.clientWidth<640){
+            boxHTML.style.fontSize=screenX +"px"
+        }
+        else{
+            boxHTML.style.fontSize=20 +"px"
+        }
+    }())
+</script>

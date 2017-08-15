@@ -1,0 +1,143 @@
+/*复位样式*/
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body,
+html {
+  max-width: 640px;
+  margin: auto;
+  color: #787878;
+  font-family: "微软雅黑";
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
+  color: #787878;
+  font-family: "微软雅黑";
+  font-size: 0.5rem;
+}
+/*公共样式*/
+.titleBox {
+  text-align: center;
+}
+.titleBox .title {
+  text-align: center;
+  padding-top: 2rem;
+}
+.titleBox .title .wrap {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+}
+.titleBox .title .wrap .title-2 {
+  align-self: center;
+}
+.titleBox .title .wrap .left {
+  width: 2rem;
+  height: 1px;
+  background: black;
+  display: block;
+  align-self: center;
+}
+.titleBox .title .wrap .right {
+  width: 2rem;
+  height: 1px;
+  background: black;
+  display: block;
+  align-self: center;
+}
+.titleBox .title-1 {
+  display: block;
+}
+p {
+  font-size: 05rem;
+}
+.btn {
+  float: left;
+  width: 3.75rem;
+  background: #74c5be;
+  font-size: 0.75rem;
+  color: #fff;
+  border-radius: 0px 10px 0px 10px;
+}
+/*工具箱*/
+/*index*/
+.index {
+  text-align: center;
+}
+.index .logo {
+  display: flex ;
+  flex-wrap: wrap;
+}
+.index .logo .boxImg {
+  height: 4rem;
+  width: 25%;
+  flex: auto;
+}
+.index .logo .boxImg img {
+  width: 100%;
+  height: 100%;
+}
+.index .btnBox {
+  overflow: hidden;
+  width: 9.5rem;
+  margin: 1.5rem auto 1.5rem auto;
+}
+.index .btnBox .btn:nth-child(1) {
+  background: #ee8fb3;
+  margin-right: 1rem;
+}
+.page01 .content {
+  width: 90%;
+  margin: auto;
+  border: 1px solid black;
+}
+.page01 .content .content01 {
+  padding: 0.3rem 0rem;
+  display: flex;
+  flex-direction: row;
+}
+.page01 .content .content01 .r {
+  margin: auto 5px ;
+  width: 6px;
+  height: 6px;
+  background: #74c5be;
+  border-radius: 100%;
+}
+.page01 .content .content01 a {
+  width: 63%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.page01 .content .content01 .t {
+  font-size: 0.5rem;
+}
+.page01 .content .content01:nth-child(1) .r {
+  background: #ee8fb3 ;
+}
+.page01 .content .content01:nth-child(1) a {
+  color: #ee8fb3 ;
+}
+.page02 .swiper-container .swiper-wrapper .img1 {
+  width: 8rem;
+  height: 8rem;
+}
+.page03 {
+  text-align: center;
+}
+.page03 .one .one-1 {
+  display: flex;
+}
+.page03 .one .one-1 .one-2 {
+  flex: auto;
+}
+.page03 .one .one-1 .one-2 img {
+  width: 90%;
+}
+.page03 .two img {
+  width: 95%;
+}
