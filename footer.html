@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" id="boxHtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <title>Title</title>
+    <style>
+        html,body,div,ul,li,img,p{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        html,body{
+            max-width: 640px;
+        }
+        a{
+            text-decoration: none;
+        }
+        .footer{
+            width: 100%;
+            background: #74c5be;
+            position: fixed;
+            bottom: 0;
+        }
+        .footer >ul{
+            width: 100%;
+            display: flex;
+        }
+        .footer >ul >li{
+            flex:auto;
+            height: 1.7rem;
+
+        }
+        .footer >ul >li a{
+            display: flex;
+            justify-content: center;
+        }
+        .footer >ul >li a img{
+            height: 1rem;
+            align-self: center;
+        }
+        .footer >ul >li a p{
+            font-size: 0.6rem;
+            color: #FFFFFF;
+            height: 1.7rem;
+            line-height: 1.7rem;
+        }
+
+        .navigation{
+            display: none;
+            width: 8.88rem;
+            position: fixed;
+            bottom: 1.7rem;
+            right:0.44rem
+        }
+        .navigation>ul{
+            width: 100%;
+            overflow: hidden;
+        }
+        .navigation>ul>li{
+            width: 1.64rem;
+            height: 1.64rem;
+            background: #ed85ad;
+            float: left;
+            border-radius: 100%;
+            margin:0 1.33rem 0.66rem 0;
+        }
+        .navigation>ul>li:nth-child(3n){
+            margin-right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="footer">
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="images/index_112.png" alt="">
+                    <p>联系电话</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/index_109.png" alt="">
+                    <p>预约看店</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/index_115.png" alt="">
+                    <p>导航</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="navigation">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+</html>
+
+<script>
+    (function () {
+        var boxHtml=document.getElementById("boxHtml");
+        var screenX=document.body.clientWidth/16;
+        if(document.body.clientWidth<640){
+            boxHtml.style.fontSize=screenX +"px";
+        }
+        else{
+            boxHtml.style.fontSize=20 +"px";
+        }
+    }())
+</script>
